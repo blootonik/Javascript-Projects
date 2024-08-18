@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="pg.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <div id="password-genrator-container">
+        <h1>Generate A Random Password</h1>
+        <div id="password-input-box">
+            <input type="text"  id="password-input" readonly placeholder="Password">
+            <div id="password-copy-icons">
+                <i class="ri-file-copy-line copy-icon"></i>
+                <i class="ri-check-double-line tickmark-icon"></i>
+            </div>
+        </div>
+        <button id="generatePasswordBtn"><i class="ri-flashlight-fill"></i>Generate Password</button>
+        
+    </div>
+</body>
+<script src="pg.js"></script>
+</html>
