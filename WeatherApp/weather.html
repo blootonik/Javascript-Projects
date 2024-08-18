@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <div id="app-container">
+        <div id="app-heaader">
+            <input type="search"  id="searchBox" placeholder="Search Your City Here..."  required autocomplete="off">
+            <i class="ri-search-line" id="searchIcon"></i>
+        </div>
+        <div id="weatherImg-box">
+            <img src="weather-app-images/clear.png" alt="">
+        </div>
+        <div id="temprature-box">
+            <h1 ><span id="temprature">22</span>°C</h1>
+            <h4 id="temp-city">New York</h4>
+        </div>
+        <div id="app-footer">
+            <div id="humidity-box" class="footer-box">
+                <img src="weather-app-images/humidity.png" alt="" id="humidityImg">
+                <div id="humidity-value" class="footer-box-value">
+                    <h5><span id="humidity">64</span>%</h5>
+                    <h6>Humidity</h6>
+                </div>
+            </div>
+            <div id="wind-speed-box" class="footer-box">
+                <img src="weather-app-images/wind.png" alt="">
+
+                <div id="wind-speed-value" class="footer-box-value">
+                    <h5 ><span id="wind-speed">18</span>km/h</h5>
+                    <h6>wind Speed</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="weather.js"></script>
+</html>
