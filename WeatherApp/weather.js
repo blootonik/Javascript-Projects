@@ -7,7 +7,7 @@ const tempCityEL  = document.querySelector("#temp-city");
 const humidityEL = document.querySelector("#humidity");
 const windSpeedEL = document.querySelector("#wind-speed");
 
-const apiKey = "d2ecec3ad43489f4cd279a538c3c3024";
+const apiKey = "*****ad43489f4c********";
 
 // let city = tempCityEL.textContent
 
