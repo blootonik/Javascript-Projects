@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div id="calculator--main-container">
+        <div id="cal-display">
+            <input type="text" name="display" id="display-output" placeholder="0" readonly>
+        </div>
+        <div id="cal-btn-box">
+            <input type="button" class="cal-btn" id="AC" value="AC" onclick="clearDisplay()">
+            <input type="button" class="cal-btn" id="DE" value="DE" onclick="deleteLastChar()">
+            <input type="button" class="cal-btn" id="decimal" value="." onclick="appendValue('.')">
+            <input type="button" class="cal-btn" id="divide" value="/" onclick="appendValue('/')">
+            <input type="button" class="cal-btn" id="seven" value="7" onclick="appendValue('7')">
+            <input type="button" class="cal-btn" id="eight" value="8" onclick="appendValue('8')">
+            <input type="button" class="cal-btn" id="nine" value="9" onclick="appendValue('9')">
+            <input type="button" class="cal-btn" id="multiply" value="*" onclick="appendValue('*')">
+            <input type="button" class="cal-btn" id="four" value="4" onclick="appendValue('4')">
+            <input type="button" class="cal-btn" id="five" value="5" onclick="appendValue('5')">
+            <input type="button" class="cal-btn" id="six" value="6" onclick="appendValue('6')">
+            <input type="button" class="cal-btn" id="subtract" value="-" onclick="appendValue('-')">
+            <input type="button" class="cal-btn" id="one" value="1" onclick="appendValue('1')">
+            <input type="button" class="cal-btn" id="two" value="2" onclick="appendValue('2')">
+            <input type="button" class="cal-btn" id="three" value="3" onclick="appendValue('3')">
+            <input type="button" class="cal-btn" id="plus" value="+" onclick="appendValue('+')">
+            <input type="button" class="cal-btn" id="double-zero" value="00" onclick="appendValue('00')">
+            <input type="button" class="cal-btn" id="zero" value="0" onclick="appendValue('0')">
+            <input type="button" class="cal-btn" id="equal" value="=" onclick="calculateResult()">
+        </div>
+    </div>
+</body>
+<script src="cal.js"></script>
+</html>
