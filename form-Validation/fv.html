@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="fv.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="form-container">
+        <i class="ri-send-plane-fill"></i>
+        <form  id="form">
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" autocomplete="off">
+                <span id="nameError"></span>
+              
+            </div>
+            <div>
+                <label for="phoneNumber">Phone No.</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="123 456 8970" autocomplete="off">
+                <span id="phoneError"></span>
+               
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="xyz@mail.com" autocomplete="off">
+                <span id="emailError"></span>
+                
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" placeholder="Enter Your Message" autocomplete="off" minlength="30"></textarea>
+                <span id="mesError"></span>
+             
+                
+            </div>
+            <span id="submitErr"></span>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="fv.js"></script>
+</html>
