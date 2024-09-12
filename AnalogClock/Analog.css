@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+:root{
+    --main-themeClr:#16034a;
+    --black-theme-color:#111;
+    --white-theme-clr : #fff;
+    --gradient-theme-clr:linear-gradient(0deg, rgb(207, 88, 52) 0%, rgb(238, 211, 32) 84%);
+
+    --main-text-clr: #000;
+    --secondary-text-clr:#fff;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    position: relative;
+    min-height: 650px;
+    border-radius: 20px;
+    background:var(--gradient-theme-clr);
+    border-top-left-radius: 225px;
+    border-top-right-radius: 225px;
+    box-shadow:25px 25px 75px rgb(0,0,0,0.75),
+    10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(0,0,0,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#clock{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: var(--main-themeClr);
+    border-radius: 50%;
+    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(0,0,0,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 205px;
+}
+
+#clock::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #efef06;
+    border: 2px solid #42e72c;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+#clock span{
+    position: absolute;
+    inset: 20px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+
+#clock span b{
+    font-size: 2em;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+    opacity: 0.6;
+    color: #6e7b8b;
+    font-weight: 900;
+}
+
+
+.circle{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #331b74;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+
+}
+.circle i{
+    background-color: var(--clr);
+    width: 8px;
+    height: 50%;
+    position: absolute;
+    opacity: 0.8;
+    transform: scaleY(0.5);
+    transform-origin:bottom ;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15px;
+
+
+}
+
+.circle:nth-child(1) i{
+    width: 1px;
+
+}
+.circle:nth-child(2) i{
+    width: 6px;
+
+}
+.circle2{
+    width: 240px;
+    height: 240px;
+    z-index: 9;
+
+}
+.circle3{
+    width: 180px;
+    height: 180px;
+    z-index: 8;
+
+}
+
+.circle::before{
+    content: "";
+    top: -8px;
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr);
+    box-shadow: 0 0 20px var(--clr);
+}
+
+#digitalClock{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #111;
+    padding: 8px 15px;
+    font-size: 4vw;
+    border-radius: 8px;
+    color: var(--secondary-text-clr);
+    font-weight: 600;
+}
+
+#digitalClock div{
+    color: var(--colour);
+}
+
+#clockBrand{
+    position: absolute;
+    top: 40%;
+}
+
+#clockBrand h1{
+    color: #6a7303;
+    font-size: 1vw;
+    
+}
